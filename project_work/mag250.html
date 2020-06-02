@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>приставки</title>
+</head>
+<body>
+<style>
+  body { background: url(img/background/background3.png); 
+  background-attachment: fixed;}
+</style>
+  <div class="section">
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-8 col-lg-offset-2 main-manu">
+         <div class="manu">
+          <nav class="one">
+            <div class="col-lg-12 manu1">
+              <ul class="topmenu text-center">
+              <li><a href="#"><button type="button" class="btn btn-primary">приставки</button><i class="fa fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="mag250.html"><button type="button" class="btn btn-success">mag250</button></a></li>
+                  <li><a href="alias.html"><button type="button" class="btn btn-success">alias</button></a></li>
+                  <li><a href="ch+-.html"><button type="button" class="btn btn-success">ch+/-</button></a></li>
+                  <li><a href="#"><button type="button" class="btn btn-success">прошивки</button></a></li>
+                </ul>
+              </li>
+              <li><a href="#"><button type="button" class="btn btn-primary">коммутаторы</button><i class="fa fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href=""><button type="button" class="btn btn-success">прошивки</button></a></li>
+                  <li><a href="https://bill.ural.ru/routers/www/dlink.html"><button type="button" class="btn btn-success">настройки</button></a></li>
+                </ul>
+              </li>
+              <li><a href="district.html"><button type="button" class="btn btn-primary">районники</button></a></li>
+              <li><a href="rasbperry.html"><button type="button" class="btn btn-primary">разбери</button></a></li>
+              <li><a href="#"><button type="button" class="btn btn-primary">IPv6</button></a></li>
+              <li><a href="http://195.64.214.42:3000"><button type="button" class="btn btn-primary">графана</button></a></li>
+              <li><a href="#"><button type="button" class="btn btn-primary">каналы</button><i class="fa fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="https://ekb.convex.ru/files/Convex_NEW_startoviy.pdf"><button type="button" class="btn btn-success">стартовый</button></a></li>
+                  <li><a href="https://ekb.convex.ru/files/Convex_NEW_prodvinutiy.pdf"><button type="button" class="btn btn-success">продвинутый</button></a></li>
+                  <li><a href="https://ekb.convex.ru/files/Convex_NEW_premialniy.pdf"><button type="button" class="btn btn-success">премиальный</button></a></li>
+                </ul>
+              </li>
+              <li><a href="https://bill.ural.ru/client?t=client_show&id=181564"><button type="button" class="btn btn-primary">тестер</button></a></li>
+            </ul>
+            </div>
+          </nav>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h2>mag</h2>
+  <p class="text">
+    адрес портала<br>
+fw_setenv portal1 http://mw.convex.ru<br>
+fw_setenv portal1 http://rk1.mw.convex.ru<br>
+<br>
+fw_setenv ipaddr_conf <input type="text" placeholder="нужный ip" class="colortext"><br>
+fw_setenv netmask <input type="text" placeholder="нужный ip" class="colortext"><br>
+fw_setenv gatewayip <input type="text" placeholder="нужный ip" class="colortext"><br>
+fw_setenv dnsip <input type="text" placeholder="нужный ip" class="colortext"><br>
+fw_setenv input_buffer_size 2000<br>
+fw_setenv timezone_conf Etc/GMT-5<br>
+<br>
+fw_setenv language ru<br>
+<br>
+fw_setenv ipaddr_conf <br>
+fw_setenv netmask <br>
+fw_setenv gatewayip <br>
+fw_setenv dnsip <br>
+fw_setenv input_buffer_size 2000<br>
+fw_setenv timezone_conf Etc/GMT-5<br>
+<br>
+Сервер времени<br>
+fw_setenv ntpurl ntp4.stratum1.ru<br>
+<br>
+ip igmp snooping<br>
+ip igmp snooping vlan 715<br>
+ip igmp snooping vlan 715 immediate-leave<br>
+ip igmp snooping vlan 3865<br>
+ip igmp snooping vlan 3865 immediate-leave<br>
+<br>
+
+
+разрешение FullHD hdmi<br>
+fw_setenv tvsystem 1080p-60<br>
+fw_setenv graphicres 1280<br>
+fw_setenv tvsystem <input type="text" placeholder="нужное значение" class="colortext"><br>
+fw_setenv graphicres <input type="text" placeholder="нужное значение" class="colortext"><br>
+<br>
+разрешение SD тюльпаны<br>
+fw_setenv tvsystem PAL<br>
+fw_setenv graphicres 720<br>
+<br>
+по HDMI корретировка звука<br>
+fw_setenv force_dvi 0<br>
+<br>
+пофиксить настроки звука<br>
+fw_setenv audio_dyn_range_comp=<br>
+fw_setenv audio_operational_mode=<br>
+fw_setenv audio_stereo_out_mode=<br>
+<br>
+Звук через оптический кабель<br>
+fw_setenv audio_dyn_range_comp MAX<br>
+fw_setenv audio_operational_mode RF_MODDE<br>
+fw_setenv audio_stereo_out_mode STEREO<br>
+fw_setenv audio_hdmi_audio_mode SPDIF<br>
+fw_setenv audio_spdif_mode BITSTEAM<br>
+<br>
+Проблема со звуком <br>
+fw_setenv audio_hdmi_audio_mode hdmi<br>
+<br>
+Загрузка с NAND<br>
+fw_setenv bootcmd run flash_self<br>
+<br>
+
+наша приставка<br>
+10.124.44.50<br>
+10.124.185.100<br>
+<br>
+
+ТВ-гид Онлайн ТВ<br>
+http://www.convex.ru/TvGuide.zip<br>
+<br>
+Уважаемый абонент!В настоящее время ведутся восстановительные работы услуги Timeshift. Приносим 
+извинения за доставленные неудобства. Convex<br>
+<br>
+Уважаемый абонент! Если ваша проблема не устранена, просим вас связаться с нами по телефону. 3820382<br>
+<br>
+Уважаемый абонент! На узле возникла общая проблема, разбираемся. Приносим извинения за доставленные неудобства. Convex.<br>
+<br>
+Уважаемый абонент! ТВ-вещание восстановлено. Пожалуйста, проверьте работу телевидения. Convex.<br>
+<br>
+Уважаемый абонент! Проведены работы для улучшения качества цифрового ТВ. Пожалуйста, проверьте работу телевидения. Convex.<br>
+<br>
+Уважаемый абонент! В настоящее время ведутся восстановительные работы. Приносим извинения за доставленные неудобства. Convex.<br>
+<br>
+Уважаемый абонент! Неисправность устранена, ТВ-вещание восстановлено. Приносим извинения за доставленные неудобства. Convex.<br>
+<br>
+Уважаемый абонент! Уведомляем Вас, что список каналов цифрового телевидения приведен в соответствие с вашим тарифом. Convex.<br>
+<br>
+Уважаемый Абонент! УК проводит отключение э/э на вышестоящем оборудовании, ориентировочные сроки восстановления - 16:00.<br>
+<br>
+Уважаемый Абонент! Ваш баланс -596.33. Пожалуйста, внесите денежные средства для доступа к услугам. С уважением, Convex.<br>
+<br>
+Уважаемый Абонент! Уведомляем, что архив доступен для телепередач, записанных после 12:00 15.03.17. Приносим извинения за неудобства. Convex.<br>
+<br>
+Уважаемый абонент! Услуга "Отложенный просмотр" восстановлена. К сожалению, телепередачи, записанные в период с 23:00 13.01.18 по 11:00 14.01.18, недоступны. Приносим извинения за доставленные неудобства<br>
+<br>
+Уважаемый абонент! Программное обеспечение телевизионной приставки обновлено. Пожалуйста, проверьте работу телевидения. Convex.<br>
+<br>
+Уважаемый абонент! ТВ-вещание восстановлено. Пожалуйста, перезагрузите приставку и проверьте работу телевидения. Convex.<br>
+<br>
+Уважаемый абонент! Уведомляем Вас, тв-гид на канале "Пятница" исправлен. С Ув. Convex.<br>
+<br>
+Уважаемый абонент! Запланированы работы по улучшению качества услуги "Таймшифт". Приносим извинения за доставленные неудобства.<br>
+<br>
+Уважаемый абонент!Не можем до вас дозвониться. Если проблема актуальна, просим вас связаться с нами по телефону. 3820382. Convex.<br>
+<br>
+Уважаемый абонент! Приложение "IVI,Youtube" восстановлено. Приносим извинения за доставленные неудобства. Convex.<br>
+<br>
+Уважаемый абонент! Приложение "<input type="text" placeholder="нужное приложение" class="colortext">" восстановлено, перезагрузите приставку.Приносим извинения за доставленные неудобства.Convex.<br>
+<br>
+Уважаемый абонент! Приложение "<input type="text" placeholder="нужное приложение" class="colortext">" временно не работает, разбираемся. Приносим извинения за доставленные неудобства. Convex.<br>
+<br>
+Уважаемый абонент! В настоящее время ведутся восстановительные работы на телеканалах Eurosport 1.2. Convex.<br>
+<br>
+Уважаемый абонент! ТВ-вещание на канале(ах) "<input type="text" placeholder="нужный канал" class="colortext">" восстановлено. Пожалуйста, проверьте работу телевидения. Convex.<br>
+<br>
+Уважаемый абонент! ТВ-вещание восстановлено, перезагрузите 
+приставку.Приносим извинения за доставленные неудобства.Convex.<br>
+<br>
+Уважаемый абонент! Приложение "Видеоклуб" восстановлено. Приносим извинения за доставленные неудобства.Convex.<br>
+<br>
+Eltex igmp:<br>
+ip igmp snooping<br>
+ip igmp snooping vlan 3816<br>
+ip igmp snooping vlan 3816 immediate-leave<br>
+switchport access multicast-tv vlan 3801 - на клиентские порты<br>
+bridge multicast unregistered filtering - на магистральном<br>
+<br>
+Для СНР обязательно:<br>
+no ip igmp snooping proxy<br>
+<br>
+для Екатеринбурга перепрошивка на 218 mag245/250:<br>
+<br>
+fw_setenv update_url tftp://mw.convex-tv.ru/250/imageupdate<br>
+fw_setenv serverip_conf 10.127.255.252<br>
+fw_setenv tftp_path_conf 250/Bootstrap<br>
+/usr/bin/rebootmng.sh up_dhcp_tftp<br>
+<br>
+для Екатеринбурга перепрошивка на 218 mag254<br>
+<br>
+fw_setenv update_url tftp://mw.convex-tv.ru/254/imageupdate_pre<br>
+fw_setenv serverip_conf 10.127.255.252<br>
+fw_setenv tftp_path_conf 254/Bootstrap<br>
+/usr/bin/rebootmng.sh up_dhcp_tftp<br>
+<br>
+или:<br>
+wget http://mw.convex.ru/245/stb_custom.bin -O /usr/bin/stb_custom.bin<br>
+fw_setenv Image_Desc CONVEX_UPDATE<br>
+reboot<br>
+<br>
+для Екатеринбурга перепрошивка на 216 mag245/250:<br>
+<br>
+fw_setenv update_url http://mw.convex-tv.ru/251/imageupdate<br>
+fw_setenv serverip_conf 10.127.255.252<br>
+fw_setenv tftp_path_conf 251/Bootstrap<br>
+/usr/bin/rebootmng.sh up_dhcp_tftp<br>
+<br>
+для Екатеринбурга перепрошивка mag254:<br>
+<br>
+fw_setenv update_url tftp://mw.convex-tv.ru/254/imageupdate_pre<br>
+fw_setenv serverip_conf 10.127.255.252<br>
+fw_setenv tftp_path_conf 254/Bootstrap<br>
+/usr/bin/rebootmng.sh up_dhcp_tftp<br>
+<br>
+Поиск query:<br>
+tcpdump igmp -n -e and host 224.0.0.1<br>
+<br>
+Трамвайный 2к4 логин пасс<br>
+convex <br>
+fdsDWB72n<br>
+<br>
+tcpdump udp<br>
+<br>
+ no no mls qos trust cos<br>
+ no mls qos trust dscp<br>
+ no mls qos queue wrr weight 1 2 3 4 0 6 7 8 <br>
+ no switchport mode trunk<br>
+ no switchport trunk allowed vlan 1;327;3876 <br>
+ no switchport trunk native vlan 200<br>
+ no ip dhcp snooping trust<br>
+<br>
+Кировград: administer/rbhfytn<br>
+Верхний Тагил: administer/tagnet  <br>
+<br>
+Приставки Рускома <br>
+root<br>
+owWU2m7YAOoqw2RP<br>
+<br>
+Коммутаторы Рускома <br>
+manager<br>
+Gbhfv-x <br>
+в конце пароля вместо х пишем последнюю цифру ( одна цифра) коммутатора<br>
+<br>
+Билл РУскома: <br>
+p.t.nikolaev<br>
+NTr43yfp<br>
+<br>
+Поиск кто раздает DHCP<br>
+tcpdump ether host (мак ртр) -e <br>
+<br>
+Что бы удалить группу 239.255.255.250<br>
+fw_setenv upnp_conf disabled - выключаем<br>
+fw_setenv upnp_conf - стираем строчку из конфига, чтобы глаза не мозолила.<br>
+<br>
+логин: supportall@convex.ru, пароль: mjPRMhHT<br>
+<br>
+ЕСЛИ НЕ ЗАХОДИТ НА ПРИСТАВКУ И ПИШЕТ<br>
+WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!<br>
+<br>
+cd ~<br>
+<br>
+rm .ssh/known_hosts<br>
+<br>
+https://wiki.tvip.ru/magic_keys - команды на твип<br>
+  </p>
+         </div>
+       </div>
+     </div>
+   </div>
+  </div>
+</body>
+</html>
